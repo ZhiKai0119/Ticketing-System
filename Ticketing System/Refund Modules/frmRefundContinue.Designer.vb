@@ -32,6 +32,24 @@ Partial Class frmRefundContinue
         Me.txtAccNo = New System.Windows.Forms.TextBox()
         Me.btnConfirm = New System.Windows.Forms.Button()
         Me.btnClose = New System.Windows.Forms.Button()
+        Me.MenuStrip1 = New System.Windows.Forms.MenuStrip()
+        Me.mnuHome = New System.Windows.Forms.ToolStripMenuItem()
+        Me.UserProfileToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
+        Me.mnuHomeExit = New System.Windows.Forms.ToolStripMenuItem()
+        Me.mnuMovie = New System.Windows.Forms.ToolStripMenuItem()
+        Me.UpdateMovieToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
+        Me.UpdateMovieToolStripMenuItem1 = New System.Windows.Forms.ToolStripMenuItem()
+        Me.DisplayMovieToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
+        Me.DeleteMovieToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
+        Me.BookingToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
+        Me.PromotionToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
+        Me.mnuPayment = New System.Windows.Forms.ToolStripMenuItem()
+        Me.PaymentToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
+        Me.mnuPaymentReceipt = New System.Windows.Forms.ToolStripMenuItem()
+        Me.mnuPaymentRefund = New System.Windows.Forms.ToolStripMenuItem()
+        Me.mnuHelp = New System.Windows.Forms.ToolStripMenuItem()
+        Me.mnuHelpAbout = New System.Windows.Forms.ToolStripMenuItem()
+        Me.MenuStrip1.SuspendLayout()
         Me.SuspendLayout()
         '
         'Label1
@@ -122,6 +140,118 @@ Partial Class frmRefundContinue
         Me.btnClose.Text = "C&lose"
         Me.btnClose.UseVisualStyleBackColor = True
         '
+        'MenuStrip1
+        '
+        Me.MenuStrip1.ImageScalingSize = New System.Drawing.Size(20, 20)
+        Me.MenuStrip1.Items.AddRange(New System.Windows.Forms.ToolStripItem() {Me.mnuHome, Me.mnuMovie, Me.BookingToolStripMenuItem, Me.PromotionToolStripMenuItem, Me.mnuPayment, Me.mnuHelp})
+        Me.MenuStrip1.Location = New System.Drawing.Point(0, 0)
+        Me.MenuStrip1.Name = "MenuStrip1"
+        Me.MenuStrip1.Size = New System.Drawing.Size(649, 28)
+        Me.MenuStrip1.TabIndex = 10
+        Me.MenuStrip1.Text = "MenuStrip1"
+        '
+        'mnuHome
+        '
+        Me.mnuHome.DropDownItems.AddRange(New System.Windows.Forms.ToolStripItem() {Me.UserProfileToolStripMenuItem, Me.mnuHomeExit})
+        Me.mnuHome.Name = "mnuHome"
+        Me.mnuHome.Size = New System.Drawing.Size(62, 24)
+        Me.mnuHome.Text = "&Home"
+        '
+        'UserProfileToolStripMenuItem
+        '
+        Me.UserProfileToolStripMenuItem.Name = "UserProfileToolStripMenuItem"
+        Me.UserProfileToolStripMenuItem.Size = New System.Drawing.Size(161, 26)
+        Me.UserProfileToolStripMenuItem.Text = "User Profile"
+        '
+        'mnuHomeExit
+        '
+        Me.mnuHomeExit.Name = "mnuHomeExit"
+        Me.mnuHomeExit.ShortcutKeys = CType((System.Windows.Forms.Keys.Alt Or System.Windows.Forms.Keys.F4), System.Windows.Forms.Keys)
+        Me.mnuHomeExit.Size = New System.Drawing.Size(161, 26)
+        Me.mnuHomeExit.Text = "E&xit"
+        '
+        'mnuMovie
+        '
+        Me.mnuMovie.DropDownItems.AddRange(New System.Windows.Forms.ToolStripItem() {Me.UpdateMovieToolStripMenuItem, Me.UpdateMovieToolStripMenuItem1, Me.DisplayMovieToolStripMenuItem, Me.DeleteMovieToolStripMenuItem})
+        Me.mnuMovie.Name = "mnuMovie"
+        Me.mnuMovie.Size = New System.Drawing.Size(62, 24)
+        Me.mnuMovie.Text = "&Movie"
+        '
+        'UpdateMovieToolStripMenuItem
+        '
+        Me.UpdateMovieToolStripMenuItem.Name = "UpdateMovieToolStripMenuItem"
+        Me.UpdateMovieToolStripMenuItem.Size = New System.Drawing.Size(178, 26)
+        Me.UpdateMovieToolStripMenuItem.Text = "Create Movie"
+        '
+        'UpdateMovieToolStripMenuItem1
+        '
+        Me.UpdateMovieToolStripMenuItem1.Name = "UpdateMovieToolStripMenuItem1"
+        Me.UpdateMovieToolStripMenuItem1.Size = New System.Drawing.Size(178, 26)
+        Me.UpdateMovieToolStripMenuItem1.Text = "Update Movie"
+        '
+        'DisplayMovieToolStripMenuItem
+        '
+        Me.DisplayMovieToolStripMenuItem.Name = "DisplayMovieToolStripMenuItem"
+        Me.DisplayMovieToolStripMenuItem.Size = New System.Drawing.Size(178, 26)
+        Me.DisplayMovieToolStripMenuItem.Text = "Display Movie"
+        '
+        'DeleteMovieToolStripMenuItem
+        '
+        Me.DeleteMovieToolStripMenuItem.Name = "DeleteMovieToolStripMenuItem"
+        Me.DeleteMovieToolStripMenuItem.Size = New System.Drawing.Size(178, 26)
+        Me.DeleteMovieToolStripMenuItem.Text = "Delete Movie"
+        '
+        'BookingToolStripMenuItem
+        '
+        Me.BookingToolStripMenuItem.Name = "BookingToolStripMenuItem"
+        Me.BookingToolStripMenuItem.Size = New System.Drawing.Size(119, 24)
+        Me.BookingToolStripMenuItem.Text = "&Booking Ticket"
+        '
+        'PromotionToolStripMenuItem
+        '
+        Me.PromotionToolStripMenuItem.Name = "PromotionToolStripMenuItem"
+        Me.PromotionToolStripMenuItem.Size = New System.Drawing.Size(91, 24)
+        Me.PromotionToolStripMenuItem.Text = "&Promotion"
+        '
+        'mnuPayment
+        '
+        Me.mnuPayment.DropDownItems.AddRange(New System.Windows.Forms.ToolStripItem() {Me.PaymentToolStripMenuItem, Me.mnuPaymentReceipt, Me.mnuPaymentRefund})
+        Me.mnuPayment.Name = "mnuPayment"
+        Me.mnuPayment.Size = New System.Drawing.Size(127, 24)
+        Me.mnuPayment.Text = "&Payment Details"
+        '
+        'PaymentToolStripMenuItem
+        '
+        Me.PaymentToolStripMenuItem.Name = "PaymentToolStripMenuItem"
+        Me.PaymentToolStripMenuItem.Size = New System.Drawing.Size(140, 26)
+        Me.PaymentToolStripMenuItem.Text = "Payment"
+        '
+        'mnuPaymentReceipt
+        '
+        Me.mnuPaymentReceipt.Name = "mnuPaymentReceipt"
+        Me.mnuPaymentReceipt.Size = New System.Drawing.Size(140, 26)
+        Me.mnuPaymentReceipt.Text = "Re&ceipt"
+        '
+        'mnuPaymentRefund
+        '
+        Me.mnuPaymentRefund.Name = "mnuPaymentRefund"
+        Me.mnuPaymentRefund.Size = New System.Drawing.Size(140, 26)
+        Me.mnuPaymentRefund.Text = "Re&fund"
+        '
+        'mnuHelp
+        '
+        Me.mnuHelp.DropDownItems.AddRange(New System.Windows.Forms.ToolStripItem() {Me.mnuHelpAbout})
+        Me.mnuHelp.Name = "mnuHelp"
+        Me.mnuHelp.Size = New System.Drawing.Size(53, 24)
+        Me.mnuHelp.Text = "&Help"
+        '
+        'mnuHelpAbout
+        '
+        Me.mnuHelpAbout.Name = "mnuHelpAbout"
+        Me.mnuHelpAbout.ShortcutKeys = CType((System.Windows.Forms.Keys.Control Or System.Windows.Forms.Keys.F1), System.Windows.Forms.Keys)
+        Me.mnuHelpAbout.Size = New System.Drawing.Size(182, 26)
+        Me.mnuHelpAbout.Text = "&About"
+        '
         'frmRefundContinue
         '
         Me.AcceptButton = Me.btnConfirm
@@ -129,6 +259,7 @@ Partial Class frmRefundContinue
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.CancelButton = Me.btnClose
         Me.ClientSize = New System.Drawing.Size(649, 294)
+        Me.Controls.Add(Me.MenuStrip1)
         Me.Controls.Add(Me.btnClose)
         Me.Controls.Add(Me.btnConfirm)
         Me.Controls.Add(Me.txtAccNo)
@@ -143,6 +274,8 @@ Partial Class frmRefundContinue
         Me.Margin = New System.Windows.Forms.Padding(4)
         Me.Name = "frmRefundContinue"
         Me.Text = "RefundContinue"
+        Me.MenuStrip1.ResumeLayout(False)
+        Me.MenuStrip1.PerformLayout()
         Me.ResumeLayout(False)
         Me.PerformLayout()
 
@@ -158,4 +291,21 @@ Partial Class frmRefundContinue
     Friend WithEvents txtAccNo As TextBox
     Friend WithEvents btnConfirm As Button
     Friend WithEvents btnClose As Button
+    Friend WithEvents MenuStrip1 As MenuStrip
+    Friend WithEvents mnuHome As ToolStripMenuItem
+    Friend WithEvents UserProfileToolStripMenuItem As ToolStripMenuItem
+    Friend WithEvents mnuHomeExit As ToolStripMenuItem
+    Friend WithEvents mnuMovie As ToolStripMenuItem
+    Friend WithEvents UpdateMovieToolStripMenuItem As ToolStripMenuItem
+    Friend WithEvents UpdateMovieToolStripMenuItem1 As ToolStripMenuItem
+    Friend WithEvents DisplayMovieToolStripMenuItem As ToolStripMenuItem
+    Friend WithEvents DeleteMovieToolStripMenuItem As ToolStripMenuItem
+    Friend WithEvents BookingToolStripMenuItem As ToolStripMenuItem
+    Friend WithEvents PromotionToolStripMenuItem As ToolStripMenuItem
+    Friend WithEvents mnuPayment As ToolStripMenuItem
+    Friend WithEvents PaymentToolStripMenuItem As ToolStripMenuItem
+    Friend WithEvents mnuPaymentReceipt As ToolStripMenuItem
+    Friend WithEvents mnuPaymentRefund As ToolStripMenuItem
+    Friend WithEvents mnuHelp As ToolStripMenuItem
+    Friend WithEvents mnuHelpAbout As ToolStripMenuItem
 End Class

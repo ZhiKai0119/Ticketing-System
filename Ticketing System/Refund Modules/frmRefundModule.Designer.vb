@@ -51,22 +51,40 @@ Partial Class frmRefund
         Me.lstRefundHistory2 = New System.Windows.Forms.ListBox()
         Me.txtCustomerId3 = New System.Windows.Forms.TextBox()
         Me.Label4 = New System.Windows.Forms.Label()
+        Me.TabPage4 = New System.Windows.Forms.TabPage()
+        Me.btnClearAll = New System.Windows.Forms.Button()
+        Me.btnRemove = New System.Windows.Forms.Button()
+        Me.lstRedfundHistory3 = New System.Windows.Forms.ListBox()
+        Me.txtCustomerId4 = New System.Windows.Forms.TextBox()
+        Me.Label8 = New System.Windows.Forms.Label()
         Me.PictureBox1 = New System.Windows.Forms.PictureBox()
         Me.Timer1 = New System.Windows.Forms.Timer(Me.components)
         Me.Timer2 = New System.Windows.Forms.Timer(Me.components)
-        Me.TabPage4 = New System.Windows.Forms.TabPage()
-        Me.txtCustomerId4 = New System.Windows.Forms.TextBox()
-        Me.Label8 = New System.Windows.Forms.Label()
-        Me.lstRedfundHistory3 = New System.Windows.Forms.ListBox()
-        Me.btnRemove = New System.Windows.Forms.Button()
-        Me.btnClearAll = New System.Windows.Forms.Button()
+        Me.MenuStrip1 = New System.Windows.Forms.MenuStrip()
+        Me.mnuHome = New System.Windows.Forms.ToolStripMenuItem()
+        Me.UserProfileToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
+        Me.mnuHomeExit = New System.Windows.Forms.ToolStripMenuItem()
+        Me.mnuMovie = New System.Windows.Forms.ToolStripMenuItem()
+        Me.UpdateMovieToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
+        Me.UpdateMovieToolStripMenuItem1 = New System.Windows.Forms.ToolStripMenuItem()
+        Me.DisplayMovieToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
+        Me.DeleteMovieToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
+        Me.BookingToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
+        Me.PromotionToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
+        Me.mnuPayment = New System.Windows.Forms.ToolStripMenuItem()
+        Me.PaymentToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
+        Me.mnuPaymentReceipt = New System.Windows.Forms.ToolStripMenuItem()
+        Me.mnuPaymentRefund = New System.Windows.Forms.ToolStripMenuItem()
+        Me.mnuHelp = New System.Windows.Forms.ToolStripMenuItem()
+        Me.mnuHelpAbout = New System.Windows.Forms.ToolStripMenuItem()
         Me.TabControl1.SuspendLayout()
         Me.TabPage1.SuspendLayout()
         Me.GroupBox1.SuspendLayout()
         Me.TabPage2.SuspendLayout()
         Me.TabPage3.SuspendLayout()
-        CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.TabPage4.SuspendLayout()
+        CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).BeginInit()
+        Me.MenuStrip1.SuspendLayout()
         Me.SuspendLayout()
         '
         'Label1
@@ -349,6 +367,64 @@ Partial Class frmRefund
         Me.Label4.TabIndex = 3
         Me.Label4.Text = "&Customer ID:"
         '
+        'TabPage4
+        '
+        Me.TabPage4.Controls.Add(Me.btnClearAll)
+        Me.TabPage4.Controls.Add(Me.btnRemove)
+        Me.TabPage4.Controls.Add(Me.lstRedfundHistory3)
+        Me.TabPage4.Controls.Add(Me.txtCustomerId4)
+        Me.TabPage4.Controls.Add(Me.Label8)
+        Me.TabPage4.Location = New System.Drawing.Point(4, 29)
+        Me.TabPage4.Name = "TabPage4"
+        Me.TabPage4.Padding = New System.Windows.Forms.Padding(3)
+        Me.TabPage4.Size = New System.Drawing.Size(966, 379)
+        Me.TabPage4.TabIndex = 3
+        Me.TabPage4.Text = "Delete Refund History"
+        Me.TabPage4.UseVisualStyleBackColor = True
+        '
+        'btnClearAll
+        '
+        Me.btnClearAll.Location = New System.Drawing.Point(748, 325)
+        Me.btnClearAll.Name = "btnClearAll"
+        Me.btnClearAll.Size = New System.Drawing.Size(180, 34)
+        Me.btnClearAll.TabIndex = 9
+        Me.btnClearAll.Text = "ClearAll &History"
+        Me.btnClearAll.UseVisualStyleBackColor = True
+        '
+        'btnRemove
+        '
+        Me.btnRemove.Location = New System.Drawing.Point(555, 325)
+        Me.btnRemove.Name = "btnRemove"
+        Me.btnRemove.Size = New System.Drawing.Size(173, 34)
+        Me.btnRemove.TabIndex = 8
+        Me.btnRemove.Text = "&Remove History"
+        Me.btnRemove.UseVisualStyleBackColor = True
+        '
+        'lstRedfundHistory3
+        '
+        Me.lstRedfundHistory3.FormattingEnabled = True
+        Me.lstRedfundHistory3.ItemHeight = 20
+        Me.lstRedfundHistory3.Location = New System.Drawing.Point(42, 66)
+        Me.lstRedfundHistory3.Name = "lstRedfundHistory3"
+        Me.lstRedfundHistory3.Size = New System.Drawing.Size(886, 244)
+        Me.lstRedfundHistory3.TabIndex = 7
+        '
+        'txtCustomerId4
+        '
+        Me.txtCustomerId4.Location = New System.Drawing.Point(153, 24)
+        Me.txtCustomerId4.Name = "txtCustomerId4"
+        Me.txtCustomerId4.Size = New System.Drawing.Size(207, 27)
+        Me.txtCustomerId4.TabIndex = 6
+        '
+        'Label8
+        '
+        Me.Label8.AutoSize = True
+        Me.Label8.Location = New System.Drawing.Point(38, 24)
+        Me.Label8.Name = "Label8"
+        Me.Label8.Size = New System.Drawing.Size(109, 20)
+        Me.Label8.TabIndex = 5
+        Me.Label8.Text = "&Customer ID:"
+        '
         'PictureBox1
         '
         Me.PictureBox1.Image = CType(resources.GetObject("PictureBox1.Image"), System.Drawing.Image)
@@ -367,69 +443,124 @@ Partial Class frmRefund
         'Timer2
         '
         '
-        'TabPage4
+        'MenuStrip1
         '
-        Me.TabPage4.Controls.Add(Me.btnClearAll)
-        Me.TabPage4.Controls.Add(Me.btnRemove)
-        Me.TabPage4.Controls.Add(Me.lstRedfundHistory3)
-        Me.TabPage4.Controls.Add(Me.txtCustomerId4)
-        Me.TabPage4.Controls.Add(Me.Label8)
-        Me.TabPage4.Location = New System.Drawing.Point(4, 29)
-        Me.TabPage4.Name = "TabPage4"
-        Me.TabPage4.Padding = New System.Windows.Forms.Padding(3)
-        Me.TabPage4.Size = New System.Drawing.Size(966, 379)
-        Me.TabPage4.TabIndex = 3
-        Me.TabPage4.Text = "Delete Refund History"
-        Me.TabPage4.UseVisualStyleBackColor = True
+        Me.MenuStrip1.ImageScalingSize = New System.Drawing.Size(20, 20)
+        Me.MenuStrip1.Items.AddRange(New System.Windows.Forms.ToolStripItem() {Me.mnuHome, Me.mnuMovie, Me.BookingToolStripMenuItem, Me.PromotionToolStripMenuItem, Me.mnuPayment, Me.mnuHelp})
+        Me.MenuStrip1.Location = New System.Drawing.Point(0, 0)
+        Me.MenuStrip1.Name = "MenuStrip1"
+        Me.MenuStrip1.Size = New System.Drawing.Size(1000, 28)
+        Me.MenuStrip1.TabIndex = 4
+        Me.MenuStrip1.Text = "MenuStrip1"
         '
-        'txtCustomerId4
+        'mnuHome
         '
-        Me.txtCustomerId4.Location = New System.Drawing.Point(153, 24)
-        Me.txtCustomerId4.Name = "txtCustomerId4"
-        Me.txtCustomerId4.Size = New System.Drawing.Size(207, 27)
-        Me.txtCustomerId4.TabIndex = 6
+        Me.mnuHome.DropDownItems.AddRange(New System.Windows.Forms.ToolStripItem() {Me.UserProfileToolStripMenuItem, Me.mnuHomeExit})
+        Me.mnuHome.Name = "mnuHome"
+        Me.mnuHome.Size = New System.Drawing.Size(62, 24)
+        Me.mnuHome.Text = "&Home"
         '
-        'Label8
+        'UserProfileToolStripMenuItem
         '
-        Me.Label8.AutoSize = True
-        Me.Label8.Location = New System.Drawing.Point(38, 24)
-        Me.Label8.Name = "Label8"
-        Me.Label8.Size = New System.Drawing.Size(109, 20)
-        Me.Label8.TabIndex = 5
-        Me.Label8.Text = "&Customer ID:"
+        Me.UserProfileToolStripMenuItem.Name = "UserProfileToolStripMenuItem"
+        Me.UserProfileToolStripMenuItem.Size = New System.Drawing.Size(161, 26)
+        Me.UserProfileToolStripMenuItem.Text = "User Profile"
         '
-        'lstRedfundHistory3
+        'mnuHomeExit
         '
-        Me.lstRedfundHistory3.FormattingEnabled = True
-        Me.lstRedfundHistory3.ItemHeight = 20
-        Me.lstRedfundHistory3.Location = New System.Drawing.Point(42, 66)
-        Me.lstRedfundHistory3.Name = "lstRedfundHistory3"
-        Me.lstRedfundHistory3.Size = New System.Drawing.Size(886, 244)
-        Me.lstRedfundHistory3.TabIndex = 7
+        Me.mnuHomeExit.Name = "mnuHomeExit"
+        Me.mnuHomeExit.ShortcutKeys = CType((System.Windows.Forms.Keys.Alt Or System.Windows.Forms.Keys.F4), System.Windows.Forms.Keys)
+        Me.mnuHomeExit.Size = New System.Drawing.Size(161, 26)
+        Me.mnuHomeExit.Text = "E&xit"
         '
-        'btnRemove
+        'mnuMovie
         '
-        Me.btnRemove.Location = New System.Drawing.Point(555, 325)
-        Me.btnRemove.Name = "btnRemove"
-        Me.btnRemove.Size = New System.Drawing.Size(173, 34)
-        Me.btnRemove.TabIndex = 8
-        Me.btnRemove.Text = "&Remove History"
-        Me.btnRemove.UseVisualStyleBackColor = True
+        Me.mnuMovie.DropDownItems.AddRange(New System.Windows.Forms.ToolStripItem() {Me.UpdateMovieToolStripMenuItem, Me.UpdateMovieToolStripMenuItem1, Me.DisplayMovieToolStripMenuItem, Me.DeleteMovieToolStripMenuItem})
+        Me.mnuMovie.Name = "mnuMovie"
+        Me.mnuMovie.Size = New System.Drawing.Size(62, 24)
+        Me.mnuMovie.Text = "&Movie"
         '
-        'btnClearAll
+        'UpdateMovieToolStripMenuItem
         '
-        Me.btnClearAll.Location = New System.Drawing.Point(748, 325)
-        Me.btnClearAll.Name = "btnClearAll"
-        Me.btnClearAll.Size = New System.Drawing.Size(180, 34)
-        Me.btnClearAll.TabIndex = 9
-        Me.btnClearAll.Text = "ClearAll &History"
-        Me.btnClearAll.UseVisualStyleBackColor = True
+        Me.UpdateMovieToolStripMenuItem.Name = "UpdateMovieToolStripMenuItem"
+        Me.UpdateMovieToolStripMenuItem.Size = New System.Drawing.Size(178, 26)
+        Me.UpdateMovieToolStripMenuItem.Text = "Create Movie"
+        '
+        'UpdateMovieToolStripMenuItem1
+        '
+        Me.UpdateMovieToolStripMenuItem1.Name = "UpdateMovieToolStripMenuItem1"
+        Me.UpdateMovieToolStripMenuItem1.Size = New System.Drawing.Size(178, 26)
+        Me.UpdateMovieToolStripMenuItem1.Text = "Update Movie"
+        '
+        'DisplayMovieToolStripMenuItem
+        '
+        Me.DisplayMovieToolStripMenuItem.Name = "DisplayMovieToolStripMenuItem"
+        Me.DisplayMovieToolStripMenuItem.Size = New System.Drawing.Size(178, 26)
+        Me.DisplayMovieToolStripMenuItem.Text = "Display Movie"
+        '
+        'DeleteMovieToolStripMenuItem
+        '
+        Me.DeleteMovieToolStripMenuItem.Name = "DeleteMovieToolStripMenuItem"
+        Me.DeleteMovieToolStripMenuItem.Size = New System.Drawing.Size(178, 26)
+        Me.DeleteMovieToolStripMenuItem.Text = "Delete Movie"
+        '
+        'BookingToolStripMenuItem
+        '
+        Me.BookingToolStripMenuItem.Name = "BookingToolStripMenuItem"
+        Me.BookingToolStripMenuItem.Size = New System.Drawing.Size(119, 24)
+        Me.BookingToolStripMenuItem.Text = "&Booking Ticket"
+        '
+        'PromotionToolStripMenuItem
+        '
+        Me.PromotionToolStripMenuItem.Name = "PromotionToolStripMenuItem"
+        Me.PromotionToolStripMenuItem.Size = New System.Drawing.Size(91, 24)
+        Me.PromotionToolStripMenuItem.Text = "&Promotion"
+        '
+        'mnuPayment
+        '
+        Me.mnuPayment.DropDownItems.AddRange(New System.Windows.Forms.ToolStripItem() {Me.PaymentToolStripMenuItem, Me.mnuPaymentReceipt, Me.mnuPaymentRefund})
+        Me.mnuPayment.Name = "mnuPayment"
+        Me.mnuPayment.Size = New System.Drawing.Size(127, 24)
+        Me.mnuPayment.Text = "&Payment Details"
+        '
+        'PaymentToolStripMenuItem
+        '
+        Me.PaymentToolStripMenuItem.Name = "PaymentToolStripMenuItem"
+        Me.PaymentToolStripMenuItem.Size = New System.Drawing.Size(140, 26)
+        Me.PaymentToolStripMenuItem.Text = "Payment"
+        '
+        'mnuPaymentReceipt
+        '
+        Me.mnuPaymentReceipt.Name = "mnuPaymentReceipt"
+        Me.mnuPaymentReceipt.Size = New System.Drawing.Size(140, 26)
+        Me.mnuPaymentReceipt.Text = "Re&ceipt"
+        '
+        'mnuPaymentRefund
+        '
+        Me.mnuPaymentRefund.Name = "mnuPaymentRefund"
+        Me.mnuPaymentRefund.Size = New System.Drawing.Size(140, 26)
+        Me.mnuPaymentRefund.Text = "Re&fund"
+        '
+        'mnuHelp
+        '
+        Me.mnuHelp.DropDownItems.AddRange(New System.Windows.Forms.ToolStripItem() {Me.mnuHelpAbout})
+        Me.mnuHelp.Name = "mnuHelp"
+        Me.mnuHelp.Size = New System.Drawing.Size(53, 24)
+        Me.mnuHelp.Text = "&Help"
+        '
+        'mnuHelpAbout
+        '
+        Me.mnuHelpAbout.Name = "mnuHelpAbout"
+        Me.mnuHelpAbout.ShortcutKeys = CType((System.Windows.Forms.Keys.Control Or System.Windows.Forms.Keys.F1), System.Windows.Forms.Keys)
+        Me.mnuHelpAbout.Size = New System.Drawing.Size(182, 26)
+        Me.mnuHelpAbout.Text = "&About"
         '
         'frmRefund
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(10.0!, 20.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.ClientSize = New System.Drawing.Size(1000, 763)
+        Me.Controls.Add(Me.MenuStrip1)
         Me.Controls.Add(Me.PictureBox1)
         Me.Controls.Add(Me.TabControl1)
         Me.Font = New System.Drawing.Font("Microsoft Sans Serif", 10.2!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
@@ -445,10 +576,13 @@ Partial Class frmRefund
         Me.TabPage2.PerformLayout()
         Me.TabPage3.ResumeLayout(False)
         Me.TabPage3.PerformLayout()
-        CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).EndInit()
         Me.TabPage4.ResumeLayout(False)
         Me.TabPage4.PerformLayout()
+        CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).EndInit()
+        Me.MenuStrip1.ResumeLayout(False)
+        Me.MenuStrip1.PerformLayout()
         Me.ResumeLayout(False)
+        Me.PerformLayout()
 
     End Sub
 
@@ -488,4 +622,21 @@ Partial Class frmRefund
     Friend WithEvents lstRedfundHistory3 As ListBox
     Friend WithEvents txtCustomerId4 As TextBox
     Friend WithEvents Label8 As Label
+    Friend WithEvents MenuStrip1 As MenuStrip
+    Friend WithEvents mnuHome As ToolStripMenuItem
+    Friend WithEvents UserProfileToolStripMenuItem As ToolStripMenuItem
+    Friend WithEvents mnuHomeExit As ToolStripMenuItem
+    Friend WithEvents mnuMovie As ToolStripMenuItem
+    Friend WithEvents UpdateMovieToolStripMenuItem As ToolStripMenuItem
+    Friend WithEvents UpdateMovieToolStripMenuItem1 As ToolStripMenuItem
+    Friend WithEvents DisplayMovieToolStripMenuItem As ToolStripMenuItem
+    Friend WithEvents DeleteMovieToolStripMenuItem As ToolStripMenuItem
+    Friend WithEvents BookingToolStripMenuItem As ToolStripMenuItem
+    Friend WithEvents PromotionToolStripMenuItem As ToolStripMenuItem
+    Friend WithEvents mnuPayment As ToolStripMenuItem
+    Friend WithEvents PaymentToolStripMenuItem As ToolStripMenuItem
+    Friend WithEvents mnuPaymentReceipt As ToolStripMenuItem
+    Friend WithEvents mnuPaymentRefund As ToolStripMenuItem
+    Friend WithEvents mnuHelp As ToolStripMenuItem
+    Friend WithEvents mnuHelpAbout As ToolStripMenuItem
 End Class
